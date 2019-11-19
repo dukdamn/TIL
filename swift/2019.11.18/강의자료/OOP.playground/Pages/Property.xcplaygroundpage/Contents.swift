@@ -34,7 +34,6 @@ print("\n---------- [ Lazy Property ] ----------\n")
 class BasicStoredProperty {
   var width = 10.0
   var height = 20.0
-  
   var area = 200.0
 //  var area = self.width * self.height
 }
