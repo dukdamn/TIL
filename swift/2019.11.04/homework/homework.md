@@ -74,7 +74,7 @@ Pascal case(upper camel case)
 
  swift에서는 filename, class, struct, enum, protocol 및 type 에 대해 이것을 사용
 
-Came case
+Camel case
 
 \- 시작부분을 제외한 각 단어의 첫 글자를 대문자로 표기
 
