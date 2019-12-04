@@ -89,7 +89,7 @@
                                 <rect key="frame" x="120" y="144" width="175" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
                                 <connections>
                                     <action selector="gitveNum:" destination="qe9-sT-Ys8" eventType="editingChanged" id="IkI-xd-OA5"/>
                                 </connections>

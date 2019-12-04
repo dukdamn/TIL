@@ -142,6 +142,7 @@ print(closureWithParamAndReturnType3("closure"))
 
 
 
+
 /*:
  ---
  ### Closure를 쓰는 이유?
@@ -301,6 +302,7 @@ print(stringCount(str: "Swift"))
 
 // 2단계 - 클로저로 변형
 let stringCount = { (str: String) -> Int in
+
   return str.count
 }
 stringCount("Swift")
@@ -308,12 +310,14 @@ stringCount("Swift")
 // 3단계 - 문법 최적화
 let stringCount2: (String) -> Int = { $0.count }
 
-
+let check = { (duck: String) -> Int in
+    return duck.count
+}
+let dudu: (String) -> Int = { $0.count }
+dudu("2323")
 
 /// 숫자 하나를 입력받은 뒤 1을 더한 값을 반환하는 클로져 구현
-let addOne = { (num: Int) -> Int in
-  return num + 1
-}
+let addOne: (Int) -> Int = { $0 + 1 }
 addOne(5)
 
 
@@ -341,4 +345,6 @@ multiplyTwoNumbers2(5, 10)
 
 
 
-//: [Next](@next)
+
+
+
