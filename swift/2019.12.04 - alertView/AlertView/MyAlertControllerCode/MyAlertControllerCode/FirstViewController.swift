@@ -24,7 +24,7 @@ class FirstViewController: UIViewController {
     
     baseUI()
   }
-  
+    
   private func baseUI() {
     view.backgroundColor = .white
     

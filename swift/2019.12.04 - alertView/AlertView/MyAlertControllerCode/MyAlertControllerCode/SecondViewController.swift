@@ -31,7 +31,6 @@ class SecondViewController: UIViewController {
     let itemHeight = CGFloat(50)
     let textFieldSpace = CGFloat(20)
     
-    
     baseView.backgroundColor = .white
     baseView.frame.size = CGSize(width: baseWidth, height: baseHeight)
     baseView.center = CGPoint(x: view.center.x, y: 300)
@@ -79,7 +78,6 @@ class SecondViewController: UIViewController {
     default:
       guard let vc = presentingViewController as? FirstViewController else { return }
       vc.content = contentTextField.text ?? ""
-      
       break
     }
     

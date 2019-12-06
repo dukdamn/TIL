@@ -12,6 +12,13 @@ class ViewController: UIViewController {
     
     var num = 0
     @IBOutlet weak var number: UILabel!
+
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
     @IBAction func minus(_ sender: Any) {
         num = Int(number.text ?? "0")!
         num -= 1
@@ -26,12 +33,5 @@ class ViewController: UIViewController {
         number.textColor = .blue
         number.text = String(num)
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
 }
 

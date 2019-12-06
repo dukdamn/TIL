@@ -22,23 +22,33 @@ class FirstVC: UIViewController {
 
     func suUI(){
     }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-
-        
         guard let secondVC1 = segue.destination as? SecondVC else {
             return
         }
+        print("(\(count.0),\(count.1),\(count.2))")
+        
+        
+        print(segue.identifier)
+        
         if segue.identifier == "DogAction" {
             print("check")
+            print("(\(count.0),\(count.1),\(count.2))")
             count.0 += 1
             easfsd.text = "(\(count.0),\(count.1),\(count.2))"
+            secondVC1.strDuck.text = "DogAction"
+            
             secondVC1.duck = "DogAction"
         }else if segue.identifier == "CatAction" {
+            print("(\(count.0),\(count.1),\(count.2))")
             count.1 += 1
             easfsd.text = "(\(count.0),\(count.1),\(count.2))"
             secondVC1.duck = "CatAction"
         }else if segue.identifier == "BirdAction" {
+            print("(\(count.0),\(count.1),\(count.2))")
             count.2 += 1
             easfsd.text = "(\(count.0),\(count.1),\(count.2))"
             secondVC1.duck = "BirdAction"
@@ -68,6 +78,7 @@ class FirstVC: UIViewController {
         let source = unwindSegue.source
         let destination =  unwindSegue.destination
         print(source, destination)
+        easfsd.text = "(\(count.0),\(count.1),\(count.2))"
     }
     
     
@@ -80,9 +91,7 @@ class FirstVC: UIViewController {
         guard let secondVC1 = unwindSegue.source as? SecondVC else {
             return
         }
-        count.0 += 1
-        count.1 += 1
-        count.2 += 1
+        easfsd.text = "(\(count.0),\(count.1),\(count.2))"
         
     }
 

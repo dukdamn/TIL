@@ -38,7 +38,7 @@ class FirstViewController: UIViewController {
             count += 10
             secondVC.count = count
         }
-        
+         
     }
     // ActiionSegue : ShouldPerform -> Prepare
     // ManualSegue : PerformSegue -> prepare
