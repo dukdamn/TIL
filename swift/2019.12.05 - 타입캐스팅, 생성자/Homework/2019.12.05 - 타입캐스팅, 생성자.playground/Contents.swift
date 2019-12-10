@@ -18,6 +18,8 @@ if let duck = task1 as? Int {
     duck + duck
 }
 
+(task1 as? Int)
+
 //[ 도전 과제 ]
 //1.
 //let task2: Any = addTwoValues
@@ -115,8 +117,3 @@ class Bus: Vehicle {
         self.init(isDoubleDecker: isDoubleDecker, maxSpeed: 100)
     }
 }
-
-var duck = Bus(isDoubleDecker: true)
-var duck1 = Vehicle()
-duck.maxSpeed
-duck1.maxSpeed
