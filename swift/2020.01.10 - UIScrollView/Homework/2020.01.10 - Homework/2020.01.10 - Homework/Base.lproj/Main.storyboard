@@ -19,19 +19,19 @@
                                 <rect key="frame" x="0.0" y="39" width="750" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fyy-Da-Kcp" userLabel="View1">
-                                        <rect key="frame" x="0.0" y="0.0" width="750" height="818"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="818"/>
                                         <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXR-TV-vnV" userLabel="View2">
-                                        <rect key="frame" x="750" y="0.0" width="750" height="818"/>
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="818"/>
                                         <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Svq-L4-0gy" userLabel="View3">
-                                        <rect key="frame" x="1500" y="0.0" width="750" height="818"/>
+                                        <rect key="frame" x="375" y="0.0" width="187.5" height="818"/>
                                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qxP-i3-o4g" userLabel="View4">
-                                        <rect key="frame" x="2250" y="0.0" width="750" height="818"/>
+                                        <rect key="frame" x="562.5" y="0.0" width="187.5" height="818"/>
                                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
@@ -40,7 +40,8 @@
                                     <constraint firstAttribute="bottom" secondItem="Fyy-Da-Kcp" secondAttribute="bottom" id="49x-Ie-1tg"/>
                                     <constraint firstItem="Fyy-Da-Kcp" firstAttribute="leading" secondItem="WTF-zs-LGU" secondAttribute="leading" id="7kd-xe-qpu"/>
                                     <constraint firstAttribute="bottom" secondItem="Svq-L4-0gy" secondAttribute="bottom" id="COp-Ad-uAb"/>
-                                    <constraint firstItem="Fyy-Da-Kcp" firstAttribute="width" secondItem="WTF-zs-LGU" secondAttribute="width" id="JiX-3T-77g"/>
+                                    <constraint firstItem="Fyy-Da-Kcp" firstAttribute="width" secondItem="WTF-zs-LGU" secondAttribute="width" multiplier="0.25" placeholder="YES" id="Hs4-dV-z5U"/>
+                                    <constraint firstItem="Fyy-Da-Kcp" firstAttribute="width" secondItem="WTF-zs-LGU" secondAttribute="width" priority="999" id="JiX-3T-77g"/>
                                     <constraint firstItem="Svq-L4-0gy" firstAttribute="leading" secondItem="XXR-TV-vnV" secondAttribute="trailing" id="PnK-YN-dFi"/>
                                     <constraint firstAttribute="bottom" secondItem="XXR-TV-vnV" secondAttribute="bottom" id="QYm-qt-A3Q"/>
                                     <constraint firstItem="XXR-TV-vnV" firstAttribute="width" secondItem="Fyy-Da-Kcp" secondAttribute="width" id="UZ4-ne-d4s"/>
