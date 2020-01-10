@@ -21,10 +21,10 @@ final class MyLocationViewController: UIViewController {
     checkAuthorizationStatus()
     
     // 자신의 위치보기
-    mapView.showsUserLocation = true
+//    mapView.showsUserLocation = true
     
     // 위성에서 보는것 보이기
-    mapView.mapType = .satellite
+//    mapView.mapType = .satellite
   }
   
   

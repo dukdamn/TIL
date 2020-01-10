@@ -16,6 +16,8 @@
 		52FD19A320F7A50500B5FCD3 /* BasicAnnotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FD19A220F7A50500B5FCD3 /* BasicAnnotationViewController.swift */; };
 		52FD19A520F7C5A100B5FCD3 /* RendererOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FD19A420F7C5A100B5FCD3 /* RendererOverlayViewController.swift */; };
 		52FD19A720F7CDD600B5FCD3 /* MyLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FD19A620F7CDD600B5FCD3 /* MyLocationViewController.swift */; };
+		6F6B5BDE23C709D5000363F9 /* MyHomeAnnotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6B5BDD23C709D5000363F9 /* MyHomeAnnotationViewController.swift */; };
+		6F6B5BE023C727A7000363F9 /* HomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6B5BDF23C727A7000363F9 /* HomeworkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		52FD19A220F7A50500B5FCD3 /* BasicAnnotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAnnotationViewController.swift; sourceTree = "<group>"; };
 		52FD19A420F7C5A100B5FCD3 /* RendererOverlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererOverlayViewController.swift; sourceTree = "<group>"; };
 		52FD19A620F7CDD600B5FCD3 /* MyLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationViewController.swift; sourceTree = "<group>"; };
+		6F6B5BDD23C709D5000363F9 /* MyHomeAnnotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHomeAnnotationViewController.swift; sourceTree = "<group>"; };
+		6F6B5BDF23C727A7000363F9 /* HomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				52FD19A020F7885200B5FCD3 /* GeocodeViewController.swift */,
 				52FD19A220F7A50500B5FCD3 /* BasicAnnotationViewController.swift */,
 				52FD19A420F7C5A100B5FCD3 /* RendererOverlayViewController.swift */,
+				6F6B5BDD23C709D5000363F9 /* MyHomeAnnotationViewController.swift */,
+				6F6B5BDF23C727A7000363F9 /* HomeworkViewController.swift */,
 				52FD199220F787B600B5FCD3 /* Main.storyboard */,
 				52FD199520F787B800B5FCD3 /* Assets.xcassets */,
 				52FD199720F787B800B5FCD3 /* LaunchScreen.storyboard */,
@@ -149,6 +155,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				52FD199120F787B600B5FCD3 /* ViewController.swift in Sources */,
+				6F6B5BDE23C709D5000363F9 /* MyHomeAnnotationViewController.swift in Sources */,
+				6F6B5BE023C727A7000363F9 /* HomeworkViewController.swift in Sources */,
 				52FD19A120F7885200B5FCD3 /* GeocodeViewController.swift in Sources */,
 				52FD19A320F7A50500B5FCD3 /* BasicAnnotationViewController.swift in Sources */,
 				52FD19A520F7C5A100B5FCD3 /* RendererOverlayViewController.swift in Sources */,

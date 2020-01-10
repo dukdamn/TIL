@@ -14,6 +14,8 @@ final class ViewController: UIViewController {
     "GeocodeViewController",
     "BasicAnnotationViewController",
     "RendererOverlayViewController",
+    "MyHomeAnnotationViewController",
+    "HomeworkViewController",
   ]
 }
 

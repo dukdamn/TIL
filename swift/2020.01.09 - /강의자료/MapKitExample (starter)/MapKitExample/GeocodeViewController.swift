@@ -29,7 +29,7 @@ final class GeocodeViewController: UIViewController {
     geocoder.reverseGeocodeLocation(location) { placeMark, error in
       print("\n---------- [ 위경도 -> 주소 ] ----------")
       if error != nil {
-        return print(error!.localizedDescription)
+        return //print(error!.localizedDescription)
       }
       
       // 국가별 주소체계에 따라 어떤 속성 값을 가질지 다름
@@ -54,10 +54,11 @@ final class GeocodeViewController: UIViewController {
         return print(error!.localizedDescription)
       }
       guard let place = placeMark?.first else { return }
-      print(place)
+//      print(place)
       
       // 위경도값 가져오기
       print(place.location?.coordinate)
     }
   }
 }
+
