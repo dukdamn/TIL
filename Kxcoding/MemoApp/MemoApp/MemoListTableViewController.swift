@@ -5,19 +5,25 @@
 //  Created by 황정덕 on 2020/01/13.
 //  Copyright © 2020 Gitbot. All rights reserved.
 //
-
+//1.테이블 뷰 배치
+//2.프로토타입 셀 디자인, 셀 아이덴티파이어 지정
+//3.데이터 소소, 델리게이트 연결
+//4.데이터 소스 구현
+//5.델리게이트 구현
 import UIKit
 
 class MemoListTableViewController: UITableViewController {
+  // 기본 날짜는 영어로 되어있음
+  let formatter: DateFormatter = {
+    let f = DateFormatter()
+    f.dateStyle = .long
+    f.timeStyle = .short
+    f.locale = Locale(identifier: "Ko_kr")
+    return f
+  }()
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = false
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem
   }
   
   // MARK: - Table view data source
@@ -30,8 +36,10 @@ class MemoListTableViewController: UITableViewController {
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-    cell.textLabel?.text = Memo.dummyMemoList[indexPath.row].content
-    cell.detailTextLabel?.text = Memo.dummyMemoList[indexPath.row].insertDate.description
+    let target = Memo.dummyMemoList[indexPath.row]
+    cell.textLabel?.text = target.content
+    cell.detailTextLabel?.text = formatter.string(from: target.insertDate)
+//    Memo.dummyMemoList[indexPath.row].insertDate.description
     // Configure the cell...
     
     return cell
