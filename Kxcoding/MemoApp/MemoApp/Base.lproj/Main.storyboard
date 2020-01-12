@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -46,12 +47,51 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="MemoApp" id="0a1-x8-ClP">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4SS-PQ-iwP"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4SS-PQ-iwP">
+                            <connections>
+                                <segue destination="3bV-FG-J8f" kind="presentation" id="x90-ip-LpL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dke-Ma-dCS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-117" y="1"/>
+        </scene>
+        <!--새 메모-->
+        <scene sceneID="DEb-dP-Vjh">
+            <objects>
+                <viewController id="jkn-97-hal" customClass="ComposeViewController" customModule="MemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5GB-h4-arn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8nE-OR-MYG">
+                                <rect key="frame" x="0.0" y="20" width="414" height="822"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="8nE-OR-MYG" secondAttribute="bottom" id="3ZU-Lq-nJ3"/>
+                            <constraint firstItem="8nE-OR-MYG" firstAttribute="trailing" secondItem="8Mb-V2-c0C" secondAttribute="trailing" id="CLh-SA-qfI"/>
+                            <constraint firstItem="8nE-OR-MYG" firstAttribute="top" secondItem="5GB-h4-arn" secondAttribute="top" constant="20" symbolic="YES" id="U3V-Lo-Hab"/>
+                            <constraint firstItem="8nE-OR-MYG" firstAttribute="leading" secondItem="8Mb-V2-c0C" secondAttribute="leading" id="YwZ-G1-OZS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Mb-V2-c0C"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="새 메모" id="iRX-Jp-qMb">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="B7R-NZ-aDf"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jAv-y3-e9z"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ehh-fn-PFm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1747.826086956522" y="-464.73214285714283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="H8Q-7Q-kqB">
@@ -68,6 +108,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S8u-PJ-8WC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1038" y="1"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gpp-dq-TzY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3bV-FG-J8f" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s0b-nM-itW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jkn-97-hal" kind="relationship" relationship="rootViewController" id="o8b-Lw-GK3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wlC-Em-fMa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837.68115942028987" y="-465.40178571428567"/>
         </scene>
     </scenes>
 </document>
