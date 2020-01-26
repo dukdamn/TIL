@@ -189,6 +189,7 @@ print(["123", "456"].reduce(100) { $0 + Int($1)! })
 let duck1 = ["1", "2", "3"].reduce("") { (sum: String, num: String) in
   return sum + num
 }
+let test2 = ["1", "2", "3"].reduce("") { $0 + $1 }
 print(duck1)
 let duck2 = [1, 2, 3].reduce("") { $0 + String($1) }
 print(duck2)
@@ -197,6 +198,9 @@ print(duck3)
 let duck4 = [1,2,3,4,5,6].reduce(Double()) { (sum: Double, duck: Int) in
   sum + Double(duck)
 }
+
+
+
 print(duck4)
 /*:
  ---
