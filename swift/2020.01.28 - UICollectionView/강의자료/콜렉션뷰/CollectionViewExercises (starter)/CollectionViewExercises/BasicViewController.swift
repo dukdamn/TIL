@@ -49,6 +49,9 @@ final class BasicViewController: UIViewController {
 // MARK: - UICollectionViewDataSource
 
 extension BasicViewController: UICollectionViewDataSource {
+  func numberOfSections(in collectionView: UICollectionView) -> Int {
+    <#code#>
+  }
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return dataSource.count
   }

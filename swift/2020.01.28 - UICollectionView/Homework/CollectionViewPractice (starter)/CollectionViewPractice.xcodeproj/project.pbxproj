@@ -13,7 +13,6 @@
 		529CBA0023DF6B3400A333AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529CB9FE23DF6B3400A333AB /* Main.storyboard */; };
 		529CBA0223DF6B3700A333AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 529CBA0123DF6B3700A333AB /* Assets.xcassets */; };
 		529CBA0523DF6B3700A333AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529CBA0323DF6B3700A333AB /* LaunchScreen.storyboard */; };
-		6F1E045023E0584F00485A38 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E044F23E0584F00485A38 /* Cat.swift */; };
 		6F1E045323E0592800485A38 /* CatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E045223E0592800485A38 /* CatCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		529CBA0123DF6B3700A333AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		529CBA0423DF6B3700A333AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		529CBA0623DF6B3700A333AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F1E044F23E0584F00485A38 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		6F1E045223E0592800485A38 /* CatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,21 +62,12 @@
 				529CB9FA23DF6B3400A333AB /* SceneDelegate.swift */,
 				529CB9FC23DF6B3400A333AB /* ViewController.swift */,
 				6F1E045123E058C500485A38 /* CatCell */,
-				6F1E044E23E057F300485A38 /* Cat */,
 				529CB9FE23DF6B3400A333AB /* Main.storyboard */,
 				529CBA0123DF6B3700A333AB /* Assets.xcassets */,
 				529CBA0323DF6B3700A333AB /* LaunchScreen.storyboard */,
 				529CBA0623DF6B3700A333AB /* Info.plist */,
 			);
 			path = CollectionViewPractice;
-			sourceTree = "<group>";
-		};
-		6F1E044E23E057F300485A38 /* Cat */ = {
-			isa = PBXGroup;
-			children = (
-				6F1E044F23E0584F00485A38 /* Cat.swift */,
-			);
-			path = Cat;
 			sourceTree = "<group>";
 		};
 		6F1E045123E058C500485A38 /* CatCell */ = {
@@ -161,7 +150,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1E045323E0592800485A38 /* CatCollectionViewCell.swift in Sources */,
-				6F1E045023E0584F00485A38 /* Cat.swift in Sources */,
 				529CB9FD23DF6B3400A333AB /* ViewController.swift in Sources */,
 				529CB9F923DF6B3400A333AB /* AppDelegate.swift in Sources */,
 				529CB9FB23DF6B3400A333AB /* SceneDelegate.swift in Sources */,
@@ -309,12 +297,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VR4RJ5PZHH;
 				INFOPLIST_FILE = CollectionViewPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kr.giftbot.example.CollectionViewPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.dukdamn.identifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -326,12 +315,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VR4RJ5PZHH;
 				INFOPLIST_FILE = CollectionViewPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kr.giftbot.example.CollectionViewPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.dukdamn.identifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

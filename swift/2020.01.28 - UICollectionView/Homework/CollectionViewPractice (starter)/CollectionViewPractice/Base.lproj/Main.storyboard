@@ -18,7 +18,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="DQP-5x-quN">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="trash.fill" catalog="system" id="bbx-Rf-PBp"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="trash.fill" catalog="system" id="bbx-Rf-PBp">
+                            <connections>
+                                <action selector="deleteTap:" destination="BYZ-38-t0r" id="Glp-Xo-sGI"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
