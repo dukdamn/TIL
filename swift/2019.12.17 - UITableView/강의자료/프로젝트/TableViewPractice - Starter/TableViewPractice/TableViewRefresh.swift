@@ -65,7 +65,7 @@ final class TableViewRefresh: UIViewController {
 // MARK: - UITableViewDataSource
 extension TableViewRefresh: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return data.count
+    return 3
   }
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "CellID", for: indexPath)

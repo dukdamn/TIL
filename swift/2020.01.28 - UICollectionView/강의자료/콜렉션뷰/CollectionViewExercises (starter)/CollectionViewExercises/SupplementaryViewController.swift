@@ -20,12 +20,13 @@ final class SupplementaryViewController: UIViewController {
     layout.footerReferenceSize = CGSize(width: 3, height: 3)
     return layout
   }()
-  
+  let uiView = UIView()
   lazy var collectionView: UICollectionView = {
     let cv = UICollectionView(frame: view.frame, collectionViewLayout: layout)
     cv.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
     cv.backgroundColor = .white
     cv.dataSource = self
+    cv.delegate = self
     view.addSubview(cv)
     return cv
   }()
@@ -33,7 +34,17 @@ final class SupplementaryViewController: UIViewController {
     super.viewDidLoad()
     setupFlowLayout()
     setupCollectionView()
+    
+    uiView.backgroundColor = .red
+//    let panGesturreRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
+    //collectionView.addGestureRecognizer(panGesturreRecognizer)
   }
+  @objc private func handlePanGesture(_ sender: UIPanGestureRecognizer){
+//    let touchLocation = sender.location(in: self.view)
+    //    self.view.center = touchLocation
+    print(sender.translation(in: self.view))
+  }
+  
   func setupCollectionView() {
     // 해더 설정
     collectionView.register(SectionHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SectionHeaderView.identifier)
@@ -86,5 +97,29 @@ extension SupplementaryViewController: UICollectionViewDataSource {
       footer.backgroundColor = .gray
       return footer
     }
+  }
+}
+extension SupplementaryViewController: UICollectionViewDelegate {
+  func collectionViewDidEndMultipleSelectionInteraction(_ collectionView: UICollectionView) {
+    print("\n----------[collectionViewDidEndMultipleSelectionInteraction]----------\n")
+  }
+//  // 지정된 항목을 선택해야하는지 대리인에게 묻는다
+//  func collectionView(_ collectionView: UICollectionView,
+//                               shouldSelectItemAt indexPath: IndexPath) -> Bool {
+//    true
+//  }
+  // 지정된 인덱스 경로의 항목이 선택되었음을 대리인에게 알립니다.
+  func collectionView(_ collectionView: UICollectionView,
+                      didSelectItemAt indexPath: IndexPath) {
+    print("\n----------[didSelectItemAt]----------\n")
+  }
+  
+  func collectionView(_ collectionView: UICollectionView,
+                      didDeselectItemAt indexPath: IndexPath) {
+    print("\n----------[didDeselectItemAt]----------\n")
+  }
+  func collectionView(_ collectionView: UICollectionView,
+                      didBeginMultipleSelectionInteractionAt indexPath: IndexPath) {
+    print("\n----------[didBeginMultipleSelectionInteractionAt]----------\n")
   }
 }

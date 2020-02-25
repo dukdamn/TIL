@@ -101,7 +101,7 @@ final class TableViewMultipleSelection: UIViewController {
 
 extension TableViewMultipleSelection: UITableViewDataSource, UITableViewDelegate {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return data.count
+    return 3
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -123,7 +123,7 @@ extension TableViewMultipleSelection: UITableViewDataSource, UITableViewDelegate
     //      return indexPath
   }
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    <#code#>
+//    <#code#>
   }
 }
 

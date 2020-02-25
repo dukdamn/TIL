@@ -29,9 +29,6 @@ final class SectionViewController: UIViewController {
     layout.sectionHeadersPinToVisibleBounds = true
     layout.footerReferenceSize = CGSize(width: 50, height: 50)
     
-    
-    
-    
     return layout
   }()
   override func viewDidLoad() {
